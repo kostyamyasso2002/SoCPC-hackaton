@@ -5,11 +5,11 @@ $ git clone https://github.com/kostyamyasso2002/SoCPC-hackaton
 ```
 Соберите docker образ
 ```
-$ docker built -t SoCPC-image SoCPC-hackaton/
+$ docker build -t socpc-image SoCPC-hackaton/
 ```
 Запустите docker file
 ```
-$ docker run --mount src=$(pwd)/data",target="/data/",type=bind --cpus 4 -m 8000M --name SoCPC-image 
+$ docker run --mount src=$(pwd)/data",target="/data/",type=bind --cpus 4 -m 8000M --name socpc-image 
 ```
 Подождать когда image соберется. Полученные данные будут лежать в docker container по адресу /data
 Чтобы их скопировать можно воспользоваться командой:
